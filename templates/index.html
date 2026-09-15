@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Python Flask Calculator</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #4e3173;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .calculator {
+        background-color: rgb(142, 104, 172);
+        padding: 30px;
+        border-radius: 10px;
+        width: 350px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 25px;
+      }
+
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #30cf7f;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #088240;
+      }
+
+      .result {
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(10, 10, 10);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+
+      <form method="POST">
+        <input
+          type="number"
+          name="num1"
+          placeholder="Enter first number"
+          step="any"
+          required
+        />
+
+        <select name="operator">
+          <option value="+">Addition (+)</option>
+
+          <option value="-">Subtraction (-)</option>
+
+          <option value="*">Multiplication (*)</option>
+
+          <option value="/">Division (/)</option>
+        </select>
+
+        <input
+          type="number"
+          name="num2"
+          placeholder="Enter second number"
+          step="any"
+          required
+        />
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      {% if result is not none %}
+
+      <div class="result">Result: {{ result }}</div>
+
+      {% endif %}
+    </div>
+  </body>
+</html>
