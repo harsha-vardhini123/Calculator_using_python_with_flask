@@ -152,6 +152,10 @@ Thumbs.db
 
 This project is created for learning and educational purposes.
 
+## Page
+
 <img width="1920" height="1080" alt="Screenshot 2026-09-15 222108" src="https://github.com/user-attachments/assets/9bb816a5-15f8-48c6-b86f-1da8378b9025" />
+
+## Video Demo
 
 https://github.com/user-attachments/assets/1db978c0-cd91-40b2-af0e-d4868e5a34b0
